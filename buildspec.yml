@@ -2,8 +2,13 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      - pip install flask
+    runtime-versions:
+      python: 3.8
+
   build:
     commands:
       - echo Build started
+
+artifacts:
+  files:
+    - '**/*'
